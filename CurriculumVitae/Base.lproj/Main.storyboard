@@ -27,7 +27,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-Wp-ar3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-Wp-ar3" customClass="BlackBgView" customModule="CurriculumVitae" customModuleProvider="target">
                                 <rect key="frame" x="20" y="173" width="335" height="321"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hea-Og-Gci">
@@ -52,10 +52,16 @@
                                     <constraint firstAttribute="bottom" secondItem="Hea-Og-Gci" secondAttribute="bottom" constant="20" id="qSB-mi-hdJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-nt-yb4">
-                                <rect key="frame" x="164" y="502" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-nt-yb4" customClass="BlackBgButton" customModule="CurriculumVitae" customModuleProvider="target">
+                                <rect key="frame" x="120.5" y="612" width="134" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.58965646400000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="5FI-cm-gEq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Lets Go.">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="WzL-cf-ltj" kind="show" id="bER-Rn-hvl"/>
                                 </connections>
@@ -63,8 +69,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FJf-nt-yb4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5x0-h3-5Kv"/>
                             <constraint firstItem="qt7-Ew-Jw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EJc-Ii-xxv"/>
                             <constraint firstItem="egW-wc-tAI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ES6-wh-VK6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FJf-nt-yb4" secondAttribute="bottom" constant="20" id="HWS-iK-6Xc"/>
                             <constraint firstItem="egW-wc-tAI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M6H-iH-DzT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egW-wc-tAI" secondAttribute="trailing" id="YXb-Va-7VQ"/>
                             <constraint firstAttribute="bottom" secondItem="egW-wc-tAI" secondAttribute="bottom" id="Zmp-1d-wqC"/>
@@ -82,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Random ResumeVC-->
         <scene sceneID="h5x-oI-5uU">
             <objects>
-                <viewController id="WzL-cf-ltj" sceneMemberID="viewController">
+                <viewController id="WzL-cf-ltj" customClass="RandomResumeVC" customModule="CurriculumVitae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grr-ix-LSR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +107,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bY-qp-efV">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bY-qp-efV" customClass="BlackBgView" customModule="CurriculumVitae" customModuleProvider="target">
                                 <rect key="frame" x="20" y="227.5" width="335" height="212.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wsx-Vr-oVw">
@@ -217,16 +225,29 @@
                                     <constraint firstItem="wsx-Vr-oVw" firstAttribute="leading" secondItem="7bY-qp-efV" secondAttribute="leading" constant="20" id="wBN-yu-7Ef"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3M-oO-085" customClass="BlackBgButton" customModule="CurriculumVitae" customModuleProvider="target">
+                                <rect key="frame" x="120.5" y="612" width="134" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60463934080000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="84T-8O-j6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Random CV">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7bY-qp-efV" firstAttribute="centerY" secondItem="grr-ix-LSR" secondAttribute="centerY" id="2AY-es-Jmn"/>
+                            <constraint firstItem="Q3M-oO-085" firstAttribute="centerX" secondItem="grr-ix-LSR" secondAttribute="centerX" id="FDu-zi-l4K"/>
                             <constraint firstAttribute="bottom" secondItem="tFD-ay-zBz" secondAttribute="bottom" id="H04-k9-lgU"/>
                             <constraint firstItem="2p5-2s-yeM" firstAttribute="leading" secondItem="nQV-b3-U2Z" secondAttribute="leading" constant="20" id="He9-af-yMc"/>
                             <constraint firstItem="nQV-b3-U2Z" firstAttribute="trailing" secondItem="2p5-2s-yeM" secondAttribute="trailing" constant="20" id="ILb-rM-Uhb"/>
                             <constraint firstItem="nQV-b3-U2Z" firstAttribute="trailing" secondItem="7bY-qp-efV" secondAttribute="trailing" constant="20" id="IdE-OR-Ho9"/>
                             <constraint firstItem="tFD-ay-zBz" firstAttribute="leading" secondItem="nQV-b3-U2Z" secondAttribute="leading" id="NCz-nI-n8W"/>
                             <constraint firstItem="tFD-ay-zBz" firstAttribute="top" secondItem="grr-ix-LSR" secondAttribute="top" id="VqP-Jy-TYx"/>
+                            <constraint firstItem="nQV-b3-U2Z" firstAttribute="bottom" secondItem="Q3M-oO-085" secondAttribute="bottom" constant="20" id="dd8-PN-uW2"/>
                             <constraint firstItem="7bY-qp-efV" firstAttribute="leading" secondItem="nQV-b3-U2Z" secondAttribute="leading" constant="20" id="jHa-Zg-Lrm"/>
                             <constraint firstItem="nQV-b3-U2Z" firstAttribute="trailing" secondItem="tFD-ay-zBz" secondAttribute="trailing" id="rbc-PL-uXo"/>
                             <constraint firstItem="2p5-2s-yeM" firstAttribute="top" secondItem="nQV-b3-U2Z" secondAttribute="top" constant="20" id="zTI-TA-TKb"/>
@@ -236,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFE-K7-J1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="27"/>
+            <point key="canvasLocation" x="1800.8" y="26.53673163418291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lN3-Bf-OUa">
