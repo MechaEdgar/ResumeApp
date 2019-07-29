@@ -21,19 +21,20 @@ class RandomResumeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        personApi.getRandomPersonUrlSession()
+        
 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func randomClicked(_ sender: Any) {
+        let random = Int.random(in: 1 ... 87)
+        personApi.getRandomPersonUrlSession(id: random) { (person) in
+            if let person = person {
+                self.nameLbl.text = person.name
+                self.heightLbl.text = person.height
+                self.massLbl.text = person.mass
+                self.birthYearLbl.text = person.birthYear
+                self.genderLbl.text = person.gender
+            }
+        }
     }
-    */
-
 }
