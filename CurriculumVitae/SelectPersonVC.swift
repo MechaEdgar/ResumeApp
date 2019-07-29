@@ -9,13 +9,8 @@
 import UIKit
 
 class SelectPersonVC: UIViewController {
-
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }
 

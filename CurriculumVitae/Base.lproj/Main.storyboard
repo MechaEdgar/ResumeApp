@@ -35,7 +35,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nph-6F-fdR">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="281"/>
-                                                <string key="text">Hello there, Im Edgar and this is my app resume , since i can use fake data i decide to go for it and call to an API to fetch the data. I would like to say thank you for your interest in my CV and i hope i passed the audition.</string>
+                                                <string key="text">Hello there, Im Edgar and this is my app resume , I made a Random Resume app for Star Wars characters using the Swapi API to fetch the data. I would like to say thank you for your interest in my CV and have a nice day.</string>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

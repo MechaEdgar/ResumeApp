@@ -64,11 +64,11 @@
 		B9845E1922ED5806004E689D /* CurriculumVitae */ = {
 			isa = PBXGroup;
 			children = (
-				B9845E3B22EEE235004E689D /* Services */,
-				B9845E3822EED586004E689D /* Utils */,
 				B9845E3322EEB771004E689D /* Model */,
 				B9845E3222EEB763004E689D /* View */,
 				B9845E3122EEB758004E689D /* Controller */,
+				B9845E3B22EEE235004E689D /* Services */,
+				B9845E3822EED586004E689D /* Utils */,
 				B9845E1A22ED5807004E689D /* AppDelegate.swift */,
 				B9845E1C22ED5807004E689D /* SelectPersonVC.swift */,
 				B9845E1E22ED5807004E689D /* Main.storyboard */,
