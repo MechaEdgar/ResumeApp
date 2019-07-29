@@ -254,6 +254,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nQV-b3-U2Z"/>
                     </view>
+                    <connections>
+                        <outlet property="birthYearLbl" destination="bPq-aG-sOc" id="eqv-2A-e09"/>
+                        <outlet property="genderLbl" destination="6Sw-rx-fTH" id="Tgd-rN-EXm"/>
+                        <outlet property="heightLbl" destination="o4r-Zn-5Lm" id="UT3-O8-ZRW"/>
+                        <outlet property="massLbl" destination="20j-Bo-fpR" id="qKc-b2-m2F"/>
+                        <outlet property="nameLbl" destination="Bk5-NY-15Q" id="ihf-nP-aAG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFE-K7-J1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
