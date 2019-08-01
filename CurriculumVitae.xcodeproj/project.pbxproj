@@ -17,6 +17,7 @@
 		B9845E3A22EED5B6004E689D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9845E3922EED5B6004E689D /* Constants.swift */; };
 		B9845E3D22EEE26A004E689D /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9845E3C22EEE26A004E689D /* PersonApi.swift */; };
 		B9845E3F22EEE87D004E689D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9845E3E22EEE87D004E689D /* Person.swift */; };
+		B9845E4122F2DA2F004E689D /* InfoPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9845E4022F2DA2F004E689D /* InfoPlistParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B9845E3922EED5B6004E689D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B9845E3C22EEE26A004E689D /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 		B9845E3E22EEE87D004E689D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B9845E4022F2DA2F004E689D /* InfoPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B9845E3922EED5B6004E689D /* Constants.swift */,
+				B9845E4022F2DA2F004E689D /* InfoPlistParser.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				B9845E1D22ED5807004E689D /* SelectPersonVC.swift in Sources */,
 				B9845E3722EED4FA004E689D /* BlackBgView.swift in Sources */,
 				B9845E3F22EEE87D004E689D /* Person.swift in Sources */,
+				B9845E4122F2DA2F004E689D /* InfoPlistParser.swift in Sources */,
 				B9845E3522EECD26004E689D /* RandomResumeVC.swift in Sources */,
 				B9845E1B22ED5807004E689D /* AppDelegate.swift in Sources */,
 			);

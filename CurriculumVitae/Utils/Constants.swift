@@ -10,7 +10,8 @@ import UIKit
 
 let BLACK_BG = UIColor.black.withAlphaComponent(0.6).cgColor
 
-let URL_BASE =  "https://swapi.co/api/"
-let PERSON_URL = URL_BASE + "people/"
+
+let URL_BASE =  InfoPlistParser.getStringValue(forKey: "BaseURL")
+let PERSON_URL = URL_BASE + InfoPlistParser.getStringValue(forKey: "PersonURL")
 
 typealias PersonResponseCompletion = (Person?) -> Void
